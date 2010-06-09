@@ -1,0 +1,870 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="DisplayUtil,com.threerings.display.DisplayUtil,addChildAbove,addChildBelow,applyToHierarchy,centerRectInRect,createBitmapData,createPointSorter,detach,dumpHierarchy,findInHierarchy,fitRectInRect,getDescendent,getDescendentPath,moveToBack,moveToFront,positionBounds,positionBoundsRelative,positionRect,removeAllChildren,sortDisplayChildren,transformPoint" name="keywords">
+<title>com.threerings.display.DisplayUtil</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'DisplayUtil - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?com/threerings/display/DisplayUtil.html&amp;com/threerings/display/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;DisplayUtil</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class DisplayUtil"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.threerings.display</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class DisplayUtil</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addChildAbove()">addChildAbove</a>(container:DisplayObjectContainer, newChild:DisplayObject, above:DisplayObject):void</div>
+<div class="summaryTableDescription">[static]
+     Adds newChild to container, directly above another child of the container.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addChildBelow()">addChildBelow</a>(container:DisplayObjectContainer, newChild:DisplayObject, below:DisplayObject):void</div>
+<div class="summaryTableDescription">[static]
+     Adds newChild to container, directly below another child of the container.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#applyToHierarchy()">applyToHierarchy</a>(disp:DisplayObject, callbackFunction:Function):Boolean</div>
+<div class="summaryTableDescription">[static]
+     Call the specified function for the display object and all descendants.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#centerRectInRect()">centerRectInRect</a>(rect:Rectangle, bounds:Rectangle):Point</div>
+<div class="summaryTableDescription">[static]
+     Center the specified rectangle within the specified bounds.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#createBitmapData()">createBitmapData</a>(disp:DisplayObject, transparent:Boolean = true, fillColor:uint = 0x00FFFFFF, scale:Number = 1):BitmapData</div>
+<div class="summaryTableDescription">[static]
+     Draws the given DisplayObject into a BitmapData object.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#createPointSorter()">createPointSorter</a>(origin:Point):Function</div>
+<div class="summaryTableDescription">[static]
+     Create a sort Function that can be used to compare Points in an
+     Array according to their distance from the specified Point.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#detach()">detach</a>(d:DisplayObject):void</div>
+<div class="summaryTableDescription">[static]
+     Detaches the specified DisplayObject from its parent DisplayObjectContainer, if it
+     has one.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dumpHierarchy()">dumpHierarchy</a>(top:DisplayObject):String</div>
+<div class="summaryTableDescription">[static]
+     Dump the display hierarchy to a String, each component on a newline, children indented
+     two spaces:
+     "instance0"  flash.display.Sprite
+       "instance1"  flash.display.Sprite
+       "entry_box"  flash.text.TextField
+          Note: This method will not dump rawChildren of flex componenets.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#findInHierarchy()">findInHierarchy</a>(top:DisplayObject, name:String, findShallow:Boolean = true, maxDepth:int):DisplayObject</div>
+<div class="summaryTableDescription">[static]
+     Find a component with the specified name in the specified display hierarchy.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fitRectInRect()">fitRectInRect</a>(rect:Rectangle, bounds:Rectangle):Point</div>
+<div class="summaryTableDescription">[static]
+     Returns the most reasonable position for the specified rectangle to
+     be placed at so as to maximize its containment by the specified
+     bounding rectangle while still placing it as near its original
+     coordinates as possible.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getDescendent()">getDescendent</a>(root:DisplayObjectContainer, path:String, pathDelimiter:String = "."):DisplayObject</div>
+<div class="summaryTableDescription">[static]
+     Traverses a display hierarchy and returns the DisplayObject at the given path.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getDescendentPath()">getDescendentPath</a>(root:DisplayObjectContainer, disp:DisplayObject, pathDelimiter:String = "."):String</div>
+<div class="summaryTableDescription">[static]
+     Returns the path used to reach the given DisplayObject from the display hierarchy rooted
+     at "root".</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveToBack()">moveToBack</a>(disp:DisplayObject):void</div>
+<div class="summaryTableDescription">[static]
+     Changes the DisplayObject's index in its parent container so that it's layered behind
+     all its siblings.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#moveToFront()">moveToFront</a>(disp:DisplayObject):void</div>
+<div class="summaryTableDescription">[static]
+     Changes the DisplayObject's index in its parent container so that it's layered in front of
+     all its siblings.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#positionBounds()">positionBounds</a>(disp:DisplayObject, x:Number, y:Number):void</div>
+<div class="summaryTableDescription">[static]
+     Sets the top-left pixel of a DisplayObject to the given location, taking the
+     object's bounds into account.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#positionBoundsRelative()">positionBoundsRelative</a>(disp:DisplayObject, relativeTo:DisplayObject, x:Number, y:Number):void</div>
+<div class="summaryTableDescription">[static]
+     Sets the top-left pixel of a DisplayObject to the given location, relative to another
+     DisplayObject's coordinate space.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#positionRect()">positionRect</a>(r:Rectangle, bounds:Rectangle, avoid:Array):Boolean</div>
+<div class="summaryTableDescription">[static]
+     Position the specified rectangle within the bounds, avoiding
+     any of the Rectangles in the avoid array, which may be destructively
+     modified.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeAllChildren()">removeAllChildren</a>(parent:DisplayObjectContainer):void</div>
+<div class="summaryTableDescription">[static]
+     Removes all children from the specified DisplayObjectContainer
+     </div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sortDisplayChildren()">sortDisplayChildren</a>(container:DisplayObjectContainer, comp:Function = null):void</div>
+<div class="summaryTableDescription">[static]
+     Sorts a container's children, using ArrayUtil.stableSort.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformPoint()">transformPoint</a>(p:Point, fromDisp:DisplayObject, toDisp:DisplayObject):Point</div>
+<div class="summaryTableDescription">[static]
+     Transforms a point from one DisplayObject's coordinate space to another's.</div>
+</td><td class="summaryTableOwnerCol">DisplayUtil</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addChildAbove()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addChildAbove</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addChildAbove(container:DisplayObjectContainer, newChild:DisplayObject, above:DisplayObject):void</code><p>
+     Adds newChild to container, directly above another child of the container.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">container</span>:DisplayObjectContainer</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">newChild</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">above</span>:DisplayObject</code></td>
+</tr>
+</table>
+</div>
+<a name="addChildBelow()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addChildBelow</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addChildBelow(container:DisplayObjectContainer, newChild:DisplayObject, below:DisplayObject):void</code><p>
+     Adds newChild to container, directly below another child of the container.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">container</span>:DisplayObjectContainer</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">newChild</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">below</span>:DisplayObject</code></td>
+</tr>
+</table>
+</div>
+<a name="applyToHierarchy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">applyToHierarchy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function applyToHierarchy(disp:DisplayObject, callbackFunction:Function):Boolean</code><p>
+     Call the specified function for the display object and all descendants.
+          This is nearly exactly like mx.utils.DisplayUtil.walkDisplayObjects,
+     except this method copes with security errors when examining a child.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">disp</span>:DisplayObject</code> &mdash; Signature:
+     function (disp :DisplayObject) :void
+        or
+     function (disp :DisplayObject) :Boolean
+          If you return a Boolean, you may return <code>true</code> to indicate that you've
+     found what you were looking for, and halt iteration.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">callbackFunction</span>:Function</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; true if iteration was halted by callbackFunction returning true
+     </td>
+</tr>
+</table>
+</div>
+<a name="centerRectInRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">centerRectInRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function centerRectInRect(rect:Rectangle, bounds:Rectangle):Point</code><p>
+     Center the specified rectangle within the specified bounds. If the bounds are too
+     small then the rectangle will be pinned to the upper-left.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rect</span>:Rectangle</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bounds</span>:Rectangle</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Point</code></td>
+</tr>
+</table>
+</div>
+<a name="createBitmapData()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">createBitmapData</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function createBitmapData(disp:DisplayObject, transparent:Boolean = true, fillColor:uint = 0x00FFFFFF, scale:Number = 1):BitmapData</code><p>
+     Draws the given DisplayObject into a BitmapData object.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">disp</span>:DisplayObject</code> &mdash; specifies whether the created BitmapData supports per-pixel transparency.
+     Defaults to true.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">transparent</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; the 32-bit ARGB color value that will be used to fill the bitmap image area
+     before the DisplayObject is drawn into it. Defaults to 0x00FFFFFF, which will cause the
+     portions of the BitmapData that aren't occupied by the DisplayObject's pixels to be
+     transparent if 'transparent' is true, or white if 'transparent' is false.
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fillColor</span>:uint</code> (default = <code>0x00FFFFFF</code>)<code></code> &mdash; scale that should be applied to the image when it's drawn to the bitmap
+     </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">scale</span>:Number</code> (default = <code>1</code>)<code></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>BitmapData</code></td>
+</tr>
+</table>
+</div>
+<a name="createPointSorter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">createPointSorter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function createPointSorter(origin:Point):Function</code><p>
+     Create a sort Function that can be used to compare Points in an
+     Array according to their distance from the specified Point.
+          Note: The function will always sort according to distance from the
+     passed-in point, even if that point's coordinates change after
+     the function is created.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">origin</span>:Point</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Function</code></td>
+</tr>
+</table>
+</div>
+<a name="detach()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">detach</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function detach(d:DisplayObject):void</code><p>
+     Detaches the specified DisplayObject from its parent DisplayObjectContainer, if it
+     has one.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">d</span>:DisplayObject</code></td>
+</tr>
+</table>
+</div>
+<a name="dumpHierarchy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dumpHierarchy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function dumpHierarchy(top:DisplayObject):String</code><p>
+     Dump the display hierarchy to a String, each component on a newline, children indented
+     two spaces:
+     "instance0"  flash.display.Sprite
+       "instance1"  flash.display.Sprite
+       "entry_box"  flash.text.TextField
+          Note: This method will not dump rawChildren of flex componenets.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">top</span>:DisplayObject</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code></td>
+</tr>
+</table>
+</div>
+<a name="findInHierarchy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">findInHierarchy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function findInHierarchy(top:DisplayObject, name:String, findShallow:Boolean = true, maxDepth:int):DisplayObject</code><p>
+     Find a component with the specified name in the specified display hierarchy.
+     Whether finding deeply or shallowly, if two components have the target name and are
+     at the same depth, the first one found will be returned.
+          Note: This method will not find rawChildren of flex componenets.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">top</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">name</span>:String</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">findShallow</span>:Boolean</code> (default = <code>true</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">maxDepth</span>:int</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>DisplayObject</code></td>
+</tr>
+</table>
+</div>
+<a name="fitRectInRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fitRectInRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function fitRectInRect(rect:Rectangle, bounds:Rectangle):Point</code><p>
+     Returns the most reasonable position for the specified rectangle to
+     be placed at so as to maximize its containment by the specified
+     bounding rectangle while still placing it as near its original
+     coordinates as possible.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rect</span>:Rectangle</code> &mdash; the rectangle to be positioned.
+     </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bounds</span>:Rectangle</code> &mdash; the containing rectangle.
+     </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Point</code></td>
+</tr>
+</table>
+</div>
+<a name="getDescendent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getDescendent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getDescendent(root:DisplayObjectContainer, path:String, pathDelimiter:String = "."):DisplayObject</code><p>
+     Traverses a display hierarchy and returns the DisplayObject at the given path.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">root</span>:DisplayObjectContainer</code> &mdash; a String containing the dot-delimited path of the descendent to return;
+     e.g. "child.grandchild.greatgrandchild".
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">path</span>:String</code> &mdash; the delimiter used to separate different elements of the path.
+     Defaults to "."
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pathDelimiter</span>:String</code> (default = "<code>.</code>")<code></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>DisplayObject</code> &mdash; the DisplayObject at the given path, or null if the path could not be resolved
+     to a DisplayObject
+     </td>
+</tr>
+</table>
+</div>
+<a name="getDescendentPath()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getDescendentPath</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getDescendentPath(root:DisplayObjectContainer, disp:DisplayObject, pathDelimiter:String = "."):String</code><p>
+     Returns the path used to reach the given DisplayObject from the display hierarchy rooted
+     at "root".
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">root</span>:DisplayObjectContainer</code> &mdash; the root of the display hierarchy that contains disp
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">disp</span>:DisplayObject</code> &mdash; the descendent to retrieve a path for
+          </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">pathDelimiter</span>:String</code> (default = "<code>.</code>")<code></code> &mdash; the delimiter used to separate different elements of the path.
+     Defaults to "."
+          </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; a String representing the path from root to disp, or null if disp is not a
+     descendent of root, or has some unnamed ancestor
+     </td>
+</tr>
+</table>
+</div>
+<a name="moveToBack()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveToBack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function moveToBack(disp:DisplayObject):void</code><p>
+     Changes the DisplayObject's index in its parent container so that it's layered behind
+     all its siblings.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">disp</span>:DisplayObject</code></td>
+</tr>
+</table>
+</div>
+<a name="moveToFront()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">moveToFront</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function moveToFront(disp:DisplayObject):void</code><p>
+     Changes the DisplayObject's index in its parent container so that it's layered in front of
+     all its siblings.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">disp</span>:DisplayObject</code></td>
+</tr>
+</table>
+</div>
+<a name="positionBounds()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">positionBounds</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function positionBounds(disp:DisplayObject, x:Number, y:Number):void</code><p>
+     Sets the top-left pixel of a DisplayObject to the given location, taking the
+     object's bounds into account.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">disp</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code></td>
+</tr>
+</table>
+</div>
+<a name="positionBoundsRelative()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">positionBoundsRelative</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function positionBoundsRelative(disp:DisplayObject, relativeTo:DisplayObject, x:Number, y:Number):void</code><p>
+     Sets the top-left pixel of a DisplayObject to the given location, relative to another
+     DisplayObject's coordinate space.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">disp</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">relativeTo</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code></td>
+</tr>
+</table>
+</div>
+<a name="positionRect()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">positionRect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function positionRect(r:Rectangle, bounds:Rectangle, avoid:Array):Boolean</code><p>
+     Position the specified rectangle within the bounds, avoiding
+     any of the Rectangles in the avoid array, which may be destructively
+     modified.
+          </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">r</span>:Rectangle</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">bounds</span>:Rectangle</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">avoid</span>:Array</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; true if the rectangle was successfully placed, given the
+     constraints, or false if the positioning failed (the rectangle will
+     be left at its original location.
+     </td>
+</tr>
+</table>
+</div>
+<a name="removeAllChildren()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeAllChildren</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function removeAllChildren(parent:DisplayObjectContainer):void</code><p>
+     Removes all children from the specified DisplayObjectContainer
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">parent</span>:DisplayObjectContainer</code></td>
+</tr>
+</table>
+</div>
+<a name="sortDisplayChildren()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sortDisplayChildren</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function sortDisplayChildren(container:DisplayObjectContainer, comp:Function = null):void</code><p>
+     Sorts a container's children, using ArrayUtil.stableSort.
+          comp is a function that takes two DisplayObjects, and returns int -1 if the first
+     object should appear before the second in the container, 1 if it should appear after,
+     and 0 if the order does not matter. If omitted, Comparators.COMPARABLE
+     will be used- all the children should implement Comparable.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">container</span>:DisplayObjectContainer</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">comp</span>:Function</code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="transformPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function transformPoint(p:Point, fromDisp:DisplayObject, toDisp:DisplayObject):Point</code><p>
+     Transforms a point from one DisplayObject's coordinate space to another's.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">p</span>:Point</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fromDisp</span>:DisplayObject</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">toDisp</span>:DisplayObject</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Point</code></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
