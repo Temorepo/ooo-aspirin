@@ -117,7 +117,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#JPGEncoder()">JPGEncoder</a>(image:BitmapData, quality:Number = 50, pixelGranularity:int = 100)</div>
 <div class="summaryTableDescription">
-  Construct a new JPGEncoder object.</div>
+     Construct a new JPGEncoder object.</div>
 </td><td class="summaryTableOwnerCol">JPGEncoder</td>
 </tr>
 <tr class="">
@@ -125,7 +125,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#getJpeg()">getJpeg</a>():ByteArray</div>
 <div class="summaryTableDescription">
-  Return a byte array containing the encoded jpeg.</div>
+     Return a byte array containing the encoded jpeg.</div>
 </td><td class="summaryTableOwnerCol">JPGEncoder</td>
 </tr>
 <tr class="">
@@ -133,7 +133,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#isComplete()">isComplete</a>():Boolean</div>
 <div class="summaryTableDescription">
-  Return true if the encoding is complete.</div>
+     Return true if the encoding is complete.</div>
 </td><td class="summaryTableOwnerCol">JPGEncoder</td>
 </tr>
 <tr class="">
@@ -141,7 +141,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#process()">process</a>(timeSlice:int):Boolean</div>
 <div class="summaryTableDescription">
-  Work on encoding the image for a specified number of milliseconds.</div>
+     Work on encoding the image for a specified number of milliseconds.</div>
 </td><td class="summaryTableOwnerCol">JPGEncoder</td>
 </tr>
 </table>
@@ -158,8 +158,8 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#completeEncoding()">completeEncoding</a>():void</div>
 <div class="summaryTableDescription">
-  Add the EOI marker to the end of the buffer, and make the result available to the consumer
-  of this class.</div>
+     Add the EOI marker to the end of the buffer, and make the result available to the consumer
+     of this class.</div>
 </td><td class="summaryTableOwnerCol">JPGEncoder</td>
 </tr>
 <tr class="">
@@ -167,7 +167,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#encodePixels()">encodePixels</a>(unitSize:int):void</div>
 <div class="summaryTableDescription">
-  Encode a specified number of pixels.</div>
+     Encode a specified number of pixels.</div>
 </td><td class="summaryTableOwnerCol">JPGEncoder</td>
 </tr>
 <tr class="">
@@ -182,7 +182,7 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <div class="summarySignature">
 <a class="signatureLink" href="#writeHeader()">writeHeader</a>():void</div>
 <div class="summaryTableDescription">
-  Write the jpeg header into the byte array for output.</div>
+     Write the jpeg header into the byte array for output.</div>
 </td><td class="summaryTableOwnerCol">JPGEncoder</td>
 </tr>
 </table>
@@ -308,27 +308,26 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function JPGEncoder(image:BitmapData, quality:Number = 50, pixelGranularity:int = 100)</code><p>
-  Construct a new JPGEncoder object.
-  
-  </p><span class="label">Parameters</span>
+     Construct a new JPGEncoder object.
+          </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width="20px"></td><td><code><span class="label">image</span>:BitmapData</code> &mdash; The image to encode
-  </td>
+     </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
 <td width="20px"></td><td><code><span class="label">quality</span>:Number</code> (default = <code>50</code>)<code></code> &mdash; Quality level between 1 and 100 determining the level of compression.s
-  </td>
+     </td>
 </tr>
 <tr>
 <td class="paramSpacer">&nbsp;</td>
 </tr>
 <tr>
 <td width="20px"></td><td><code><span class="label">pixelGranularity</span>:int</code> (default = <code>100</code>)<code></code> &mdash; The minumum number of pixels to process at a time.
-  </td>
+     </td>
 </tr>
 </table>
 </div>
@@ -342,9 +341,9 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>protected function completeEncoding():void</code><p>
-  Add the EOI marker to the end of the buffer, and make the result available to the consumer
-  of this class.
-  </p></div>
+     Add the EOI marker to the end of the buffer, and make the result available to the consumer
+     of this class.
+     </p></div>
 <a name="encodePixels()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -353,9 +352,9 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>protected function encodePixels(unitSize:int):void</code><p>
-  Encode a specified number of pixels.  Fewer pixels will be encoded if the end of the image
-  is reached first.
-  </p><span class="label">Parameters</span>
+     Encode a specified number of pixels.  Fewer pixels will be encoded if the end of the image
+     is reached first.
+     </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width="20px"></td><td><code><span class="label">unitSize</span>:int</code></td>
@@ -370,8 +369,8 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function getJpeg():ByteArray</code><p>
-  Return a byte array containing the encoded jpeg.
-  </p><p></p>
+     Return a byte array containing the encoded jpeg.
+     </p><p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
@@ -396,8 +395,8 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function isComplete():Boolean</code><p>
-  Return true if the encoding is complete.
-  </p><p></p>
+     Return true if the encoding is complete.
+     </p><p></p>
 <span class="label">Returns</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
@@ -413,9 +412,9 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>public function process(timeSlice:int):Boolean</code><p>
-  Work on encoding the image for a specified number of milliseconds.  Return true if there
-  is no more processing to do.
-  </p><span class="label">Parameters</span>
+     Work on encoding the image for a specified number of milliseconds.  Return true if there
+     is no more processing to do.
+     </p><span class="label">Parameters</span>
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width="20px"></td><td><code><span class="label">timeSlice</span>:int</code></td>
@@ -437,8 +436,8 @@ showHideInherited();
 </table>
 <div class="detailBody">
 <code>protected function writeHeader():void</code><p>
-  Write the jpeg header into the byte array for output.
-  </p></div>
+     Write the jpeg header into the byte array for output.
+     </p></div>
 <br>
 <br>
 <hr>

@@ -345,8 +345,7 @@ showHideInherited();
 <tr>
 <td width="20px"></td><td><code><span class="label">appDom</span>:ApplicationDomain</code> (default = <code>null</code>)<code></code> &mdash; the ApplicationDomain in which to load the contents, or null to specify
      that it should load in a child of the current ApplicationDomain.
-     
-     </td>
+          </td>
 </tr>
 </table>
 <br>
@@ -365,16 +364,13 @@ showHideInherited();
      function handleComplete (result :Object) :void {
         // process a result here. Result may be a DisplayObject or an Error.
      };
-     
-     var obj :Object = {
+          var obj :Object = {
          key1: "http://somehost.com/someImage.gif",
          key2: "http://somehost.com/someOtherImage.gif"
      };
-     
-     MultiLoader.getContents(obj, handleComplete, true);
+          MultiLoader.getContents(obj, handleComplete, true);
      </pre></div>
-     
-     <p></p>Load 3 embeds, wait to handle them until they're all loaded.
+          <p></p>Load 3 embeds, wait to handle them until they're all loaded.
      <div class='listing'><pre>
      function handleComplete (results :Array) :void {
          // process results here
