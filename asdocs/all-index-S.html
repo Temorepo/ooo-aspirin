@@ -279,18 +279,13 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("SÂ
      Set the log level for the specified module.</td>
 </tr>
 <tr>
-<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html#setLevels()">setLevels</a>(settingString) &mdash; Static method in class com.threerings.util.<a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html">Log</a></td>
+<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html#setLevels()">setLevels</a>(settings) &mdash; Static method in class com.threerings.util.<a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html">Log</a></td>
 </tr>
 <tr>
 <td width="20"></td><td>
-     Parses a String in the form of ":info;com.foo.game:debug;com.bar.util:warning"
-          Semicolons separate modules, colons separate a module name from the log level.</td>
-</tr>
-<tr>
-<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html#_setLevels">_setLevels</a> &mdash; Static property in class com.threerings.util.<a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html">Log</a></td>
-</tr>
-<tr>
-<td width="20"></td><td> The configured log levels.</td>
+     If given an Object, sets levels using the mapping between modules and log levels eg
+     {"com.threerings":Log.INFO, "com.threerings.util":Log.DEBUG}
+          An empty string specifies the top-level (global) module.</td>
 </tr>
 <tr>
 <td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/text/class-list.html');" href="com/threerings/text/TextFieldUtil.html#setMaximumTextWidth()">setMaximumTextWidth</a>(tf, width, truncationString) &mdash; Static method in class com.threerings.text.<a onclick="javascript:loadClassListFrame('com/threerings/text/class-list.html');" href="com/threerings/text/TextFieldUtil.html">TextFieldUtil</a></td>
@@ -745,6 +740,15 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("SÂ
 <td width="20"></td><td> Checks the video every 100ms to see if the dimensions are now know.</td>
 </tr>
 <tr>
+<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/text/class-list.html');" href="com/threerings/text/TextFieldUtil.html#sizeFieldToText()">sizeFieldToText</a>(txt) &mdash; Static method in class com.threerings.text.<a onclick="javascript:loadClassListFrame('com/threerings/text/class-list.html');" href="com/threerings/text/TextFieldUtil.html">TextFieldUtil</a></td>
+</tr>
+<tr>
+<td width="20"></td><td>
+     After the text is set and positioned, and any desired
+     adjustments have been made, this "bakes-in" the text size
+     into the TextField's width/height.</td>
+</tr>
+<tr>
 <td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/media/class-list.html');" href="com/threerings/media/MediaContainer.html#SIZE_KNOWN">SIZE_KNOWN</a> &mdash; Constant static property in class com.threerings.media.<a onclick="javascript:loadClassListFrame('com/threerings/media/class-list.html');" href="com/threerings/media/MediaContainer.html">MediaContainer</a></td>
 </tr>
 <tr>
@@ -1030,12 +1034,6 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("SÂ
 <td width="20"></td><td>
      Called when we've stopped loading, which may be as a result of
      completion, an error while loading, or early termination.</td>
-</tr>
-<tr>
-<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html#stringToLevel()">stringToLevel</a>(s) &mdash; Static method in class com.threerings.util.<a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html">Log</a></td>
-</tr>
-<tr>
-<td width="20"></td><td></td>
 </tr>
 <tr>
 <td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/StringUtil.html">StringUtil</a> &mdash; Class in package <a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/package-detail.html">com.threerings.util</a></td>

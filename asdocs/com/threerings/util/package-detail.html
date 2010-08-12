@@ -179,7 +179,11 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Pa
 </tr>
 <tr class="prow1">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="Log.html">Log</a></td><td class="summaryTableLastCol">
- A simple logging mechanism.</td>
+ A simple logging mechanism.<p/>
+  Log instances are created for modules, and the logging level can be configured per
+ module in a hierarchical fashion.<p/>
+  Typically, you should create a module name based on the full path to a class:
+ calling getLog() and passing an object or Class will do this.</td>
 </tr>
 <tr class="prow0">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableSecondCol"><a href="MailUtil.html">MailUtil</a></td><td class="summaryTableLastCol">

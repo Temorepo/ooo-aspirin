@@ -121,18 +121,6 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("LÂ
 <td width="20"></td><td> Returns the square of the vector's length, which is cheaper to calculate than length.</td>
 </tr>
 <tr>
-<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html#LEVEL_NAMES">LEVEL_NAMES</a> &mdash; Constant static property in class com.threerings.util.<a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html">Log</a></td>
-</tr>
-<tr>
-<td width="20"></td><td> The outputted names of each level.</td>
-</tr>
-<tr>
-<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html#_levels">_levels</a> &mdash; Static property in class com.threerings.util.<a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html">Log</a></td>
-</tr>
-<tr>
-<td width="20"></td><td> A cache of log levels, copied from _setLevels.</td>
-</tr>
-<tr>
 <td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/ui/class-list.html');" href="com/threerings/ui/KeyRepeatLimiter.html#_limitRate">_limitRate</a> &mdash; Property in class com.threerings.ui.<a onclick="javascript:loadClassListFrame('com/threerings/ui/class-list.html');" href="com/threerings/ui/KeyRepeatLimiter.html">KeyRepeatLimiter</a></td>
 </tr>
 <tr>
@@ -302,14 +290,11 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("LÂ
 </tr>
 <tr>
 <td width="20"></td><td>
- A simple logging mechanism.</td>
-</tr>
-<tr>
-<td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html#logStackTrace()">logStackTrace</a>(error) &mdash; Method in class com.threerings.util.<a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/Log.html">Log</a></td>
-</tr>
-<tr>
-<td width="20"></td><td>
-     Log just a stack trace with 'warning' priority.</td>
+ A simple logging mechanism.<p/>
+  Log instances are created for modules, and the logging level can be configured per
+ module in a hierarchical fashion.<p/>
+  Typically, you should create a module name based on the full path to a class:
+ calling getLog() and passing an object or Class will do this.</td>
 </tr>
 <tr>
 <td colspan="2" class="idxrow"><a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/LogTarget.html"><i>LogTarget</i></a> &mdash; Interface in package <a onclick="javascript:loadClassListFrame('com/threerings/util/class-list.html');" href="com/threerings/util/package-detail.html">com.threerings.util</a></td>

@@ -4,7 +4,7 @@
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
 <link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
-<meta content="ColorUtil,com.threerings.display.ColorUtil,INV_255,LUMA_B,LUMA_G,LUMA_R,R2D,ROOT_3,blend,composeColor,getBrightness,getHue,setBrightness" name="keywords">
+<meta content="ColorUtil,com.threerings.display.ColorUtil,INV_255,LUMA_B,LUMA_G,LUMA_R,R2D,ROOT_3,HSBtoRGB,RGBtoHSB,blend,composeColor,getBlue,getBrightness,getGreen,getHue,getRed,setBrightness" name="keywords">
 <title>com.threerings.display.ColorUtil</title>
 </head>
 <body>
@@ -71,6 +71,14 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
+<a class="signatureLink" href="#getBlue()">getBlue</a>(color:uint):uint</div>
+<div class="summaryTableDescription">[static]
+     Returns the 8-bit blue component of the 24-bit color.</div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
 <a class="signatureLink" href="#getBrightness()">getBrightness</a>(color:uint):Number</div>
 <div class="summaryTableDescription">[static]
      Returns a color's brightness value, as a percentage.</div>
@@ -79,9 +87,43 @@ if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Cl
 <tr class="">
 <td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
 <div class="summarySignature">
+<a class="signatureLink" href="#getGreen()">getGreen</a>(color:uint):uint</div>
+<div class="summaryTableDescription">[static]
+     Returns the 8-bit green component of the 24-bit color.</div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
 <a class="signatureLink" href="#getHue()">getHue</a>(color:uint):Number</div>
 <div class="summaryTableDescription">[static]
      Returns a color's Hue value, in degrees.</div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getRed()">getRed</a>(color:uint):uint</div>
+<div class="summaryTableDescription">[static]
+     Returns the 8-bit red component of the 24-bit color.</div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#HSBtoRGB()">HSBtoRGB</a>(hue:Number, saturation:Number, brightness:Number):uint</div>
+<div class="summaryTableDescription">[static]
+     Returns the uint representing the color in RGB that is equivalent to the hue, saturation,
+      and brightness specified.</div>
+</td><td class="summaryTableOwnerCol">ColorUtil</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#RGBtoHSB()">RGBtoHSB</a>(r:int, g:int, b:int):Array</div>
+<div class="summaryTableDescription">[static]
+     Returns an array of Numbers representing Hue, Saturation, and Brightness for the color
+      specified in RGB.</div>
 </td><td class="summaryTableOwnerCol">ColorUtil</td>
 </tr>
 <tr class="">
@@ -205,6 +247,29 @@ showHideInherited();
 </tr>
 </table>
 </div>
+<a name="getBlue()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBlue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getBlue(color:uint):uint</code><p>
+     Returns the 8-bit blue component of the 24-bit color.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code></td>
+</tr>
+</table>
+</div>
 <a name="getBrightness()"></a>
 <table cellspacing="0" cellpadding="0" class="detailHeader">
 <tr>
@@ -225,6 +290,29 @@ showHideInherited();
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width="20"></td><td><code>Number</code></td>
+</tr>
+</table>
+</div>
+<a name="getGreen()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getGreen</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getGreen(color:uint):uint</code><p>
+     Returns the 8-bit green component of the 24-bit color.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code></td>
 </tr>
 </table>
 </div>
@@ -249,6 +337,101 @@ showHideInherited();
 <table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td width="20"></td><td><code>Number</code></td>
+</tr>
+</table>
+</div>
+<a name="getRed()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getRed</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function getRed(color:uint):uint</code><p>
+     Returns the 8-bit red component of the 24-bit color.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">color</span>:uint</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code></td>
+</tr>
+</table>
+</div>
+<a name="HSBtoRGB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">HSBtoRGB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function HSBtoRGB(hue:Number, saturation:Number, brightness:Number):uint</code><p>
+     Returns the uint representing the color in RGB that is equivalent to the hue, saturation,
+      and brightness specified.  Based upon java.awt.Color.HSBtoRGB.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">hue</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">saturation</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">brightness</span>:Number</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>uint</code></td>
+</tr>
+</table>
+</div>
+<a name="RGBtoHSB()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">RGBtoHSB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function RGBtoHSB(r:int, g:int, b:int):Array</code><p>
+     Returns an array of Numbers representing Hue, Saturation, and Brightness for the color
+      specified in RGB.  Based on java.awt.Color.RGBtoHSB.
+     </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">r</span>:int</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">g</span>:int</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:int</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code></td>
 </tr>
 </table>
 </div>
