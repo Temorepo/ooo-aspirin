@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<project name="aspirin" default="aslib" basedir="." xmlns:artifact="urn:maven-artifact-ant">
+  <property name="asrc.dir" location="src/main/as"/>
+  <property name="deploy.dir" location="dist"/>
+
+  <property name="ooo-build.vers" value="2.5"/>
+  <ant antfile="bootstrap.xml"/>
+  <import file="${user.home}/.m2/ooo-build/${ooo-build.vers}/ooo-build.xml"/>
+
+  <target name="-prepare" depends="-init-ooo">
+    <!-- we can't use <mavendep> here because we need to exclude our pom depends -->
+    <artifact:dependencies filesetId="pom.fileset" cacheDependencyRefs="true" type="swc"
+      dependencyRefsBuildFile="${deploy.dir}/pom.dependencies">
+      <pom file="pom.xml"/>
+    </artifact:dependencies>
+    <pathconvert pathsep="@{pathSep}" property="aslib.path" refid="pom.fileset"/>
+    <maventaskdef groupId="com.threerings.ant" artifactId="actionscript" version="1.0"/>
+  </target>
+
+  <target name="distclean" description="Removes all generated files and directories">
+    <delete dir="${deploy.dir}"/>
+  </target>
+
+  <target name="aslib" depends="-prepare" description="Builds the library (.swc file)">
+    <mkdir dir="${deploy.dir}"/>
+    <compc srcdir="${asrc.dir}" libpath="${aslib.path}"
+        dest="${deploy.dir}/${ant.project.name}.swc"/>
+  </target>
+
+  <target name="asdoc" depends="-prepare" description="Builds the documentation">
+    <mkdir dir="${deploy.dir}/asdocs"/>
+    <asdoc srcdir="${asrc.dir}" libpath="${aslib.path}" destdir="${deploy.dir}/asdocs"/>
+  </target>
+
+  <target name="dist" depends="aslib"
+          description="Builds the library (for consistency with Java builds)..">
+  </target>
+
+  <target name="maven-deploy" depends="aslib"
+          description="Deploys build artifacts to a Maven repository.">
+    <mavendeploy file="${deploy.dir}/${ant.project.name}.swc" pom="pom.xml" srcdir="${asrc.dir}"/>
+    <mavendeploy file="bin/import_action.py" pom="etc/py-pom.xml"/>
+  </target>
+</project>
