@@ -1,604 +1,76 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
-<meta content="TimeBuffer,com.threerings.util.TimeBuffer,_array,_firstIndex,_length,_maxAge,_timerFn,empty,length,maxAge,at,clear,entryAt,every,forEach,indexOf,pop,pruneOldEntries,push,setCapacity,shift,timestampAt" name="keywords">
-<title>com.threerings.util.TimeBuffer</title>
-</head>
-<body>
-<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
-<!--
-				asdocTitle = 'TimeBuffer - Aspirin API Documentation';
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="TimeBuffer,com.threerings.util.TimeBuffer,ACTIVE,AVERAGE_INTERVAL,COMMAND,CONFIG_VALUE_SET,DEBUG,DECIMAL,DEFAULT_TIME_WINDOW,DOES_NOT_INTERSECT,EMAIL_REGEX,ERROR,FAST_UNSAFE_NOTIFY,HEX,INFO,INTERSECTION_NORTH,INTERSECTION_SOUTH,LOAD_ERROR,LOAD_SUCCESS,LOWER_MASK,M,MATRIX_A,N,OFF,SAFE_IN_ORDER_NOTIFY,TWO_PI,UPPER_MASK,URL_REGEXP,WARNING,_1,_2,_3,_4,_5,_6,_7,_8,_9,_activeMultiLoaders,_array,_array,_blockConstructor,_callbacks,_capacity,_children,_children,_code,_complete,_contentType,_controlledPanel,_ctorParamTypes,_currentNode,_data,_data,_dataFormat,_days,_debug,_delayer,_delayer,_details,_disp,_entries,_errorHandler,_events,_failureCallback,_firstIndex,_firstIndex,_forEach,_fpsBuffer,_fpsOffset,_itrKeys,_itrKeys,_lastTime,_length,_length,_list,_listeners,_loadedImages,_loadingImages,_log,_map,_maxAge,_method,_mgr,_months,_msg,_name,_name,_notifyPolicy,_oldestOp,_onAllSatisfied,_ops,_parent,_parent,_parser,_period,_reallyEnabled,_ref,_remaining,_result,_rootNode,_satisfied,_so,_source,_stackDepth,_statsInterval,_successCallback,_targetsToKeys,_throwErrors,_timerFn,_timers,_unsatisfied,_url,_value,_value,_wantReport,arg,available,capacity,command,dumpStack,elements,empty,empty,enabled,fpsCur,fpsMax,fpsMean,fpsMin,frameTimeCur,indentAmount,length,length,log,marshallExceptions,maxAge,name,nameFieldWidth,objectId,p,q,r,ready,seedUniquifier,start,stop,url,value,x,adapt,adapt,adapt,add,add,add,addAll,addArgs,addArgsArray,addAt,addCallback,addFields,addTarget,add,adopt,and,appendReport,apply,argToString,argify,args,argsArray,asyncForEach,at,at,binary,binarySearch,binarySearch,bind,build,calcStats,call,callLater,callProperty,callWhenTrue,callWhenTrue,callback,callbackOnce,call,cancelAllTimers,cancelTimer,capitalize,checkArgument,checkIndex,checkNotNull,checkRange,checkReport,checkSets,checkState,clamp,clear,clear,clear,clear,clear,clone,clone,clone,clone,clone,close,compare,compare,compare,compareBooleans,compareBooleans,compareComparables,compareComparables,compareEnumsByName,compareIgnoreCase,compareInts,compareInts,compareNumbers,compareNumbers,compareStrings,compareStrings,compareStringsIgnoreCase,compareStringsInsensitively,compareTo,compareTo,compareUnknowns,compose,configureBridge,constant,constructor,constructorParamTypes,contains,contains,containsKey,contains,contains,contentType,copy,copyOf,copyOf,copy,create,create,createAnd,createEquals,createFields,createFor,createFor,createHasProperty,createIn,createIs,createNot,createNullSafe,createOr,createPropertyEquals,createReverse,createTimer,create,deNull,debug,delayFrame,delayFrame,delayFrame,delayFrames,delayFrames,delayFrames,deleteProperty,deleteProperty,difference,dispatch,dispatch,distance,doReport,doWhen,doWipe,dumpStack,endsWith,ensureCapacity,enter,entryAt,equals,equals,equals,equals,equals,equals,equals,equals,error,every,every,every,exit,fail,failureLogger,fill,fill,filter,filter,findIf,findIf,findKey,finishedEnumerating,floorDiv,foldl,forEach,forEach,forEach,forEach,forEach,forEach,format,formatNumber,freeAllHandlers,freeAllHandlers,freeAllOn,fromByte,fromBytes,get,get,getArray,getAttr,getBitmapData,getBoolean,getBooleanAttr,getClassByName,getClassName,getClass,getColor,getConstructorParamTypes,getConstructor,getContents,getConversationalDateString,getData,getDayName,getDefault,getDisplayObjects,getDotSuffix,getEnumAttr,getEnumSetAttr,getErrString,getFile,getFileAsString,getFileAsXML,getFiles,getFlashMajorVersion,getFlashVersion,getGlobalManager,getImage,getInfoParameters,getInt,getIntAttr,getIntersection,getIntersectionPoint,getIntersectionType,getLatestOperation,getLength,getLoaders,getLoaders,getLog,getMonthName,getNumber,getNumberAttr,getParameters,getPoint,getProperty,getPropertyNames,getProperty,getRectangle,getSingleChildText,getSingleChild,getString,getStringArrayAttr,getStringAttr,getText,getUintAttr,getValue,getWeightedIndex,get,get,get,handleAction,handleComplete,handleError,hasAttribute,hasAttr,hasChild,hasProperty,hashCode,hashCode,hashCode,hexdump,hexlate,id,immutable,imul,indexIf,indexIf,indexOf,indexOf,indexOf,indexOf,indexOf,info,init,instantiateAllChildren,instantiateNode,intersection,isAssignableAs,isBlank,isComplete,isEmpty,isEmpty,isEmpty,isFalse,isFlash10,isImageLoaded,isIntersected,isLowerCase,isNotNull,isNull,isNull,isPersisting,isPlainObject,isSameClass,isSimple,isTrue,isUpperCase,isValidAddress,isWhitespace,justOnce,keys,keys,lastIndexOf,listen,listenForSizeChange,load,loadClasses,loadImage,log,logStackTrace,logWarning,log,map,map,mapWithClassName,markAsHandled,max,max,min,min,name,navigateToURL,newBuilder,newBuilder,newClassMap,newInstance,newList,newMapOf,newSetOf,newSortedMapOf,newSortedSetOf,newXML,nextBoolean,nextInt,nextName,nextNameIndex,nextNameIndex,nextName,nextNumber,nextValue,nextValue,next,normalizeDegrees,normalizeRadians,notNull,noteOp,onEachAdd,onEachRemove,onEnterFirstFrame,onEnterFrame,onFailure,onLoadComplete,onLoadError,onSuccess,opsToString,ordinal,output,pad,padToLength,padToLength,pairs,pairsArray,parallelForEach,parseBoolean,parseEnumSet,parseInt0,parseInteger,parseNumber,parseStringMember,parseURLs,parseUnsignedInteger,parser,partial,pickRandom,pop,pop,postAction,post,prepad,processProperty,pruneOldEntries,push,push,put,range,range,registerListener,registerListener,registerListenerUntil,registerListenerUntil,registerOne,registerOneShotCallback,registerOneShotCallback,registerUnload,registerUnload,reinit,remove,remove,remove,remove,removeAll,removeAllIf,removeAllIf,removeAll,removeAt,removeCallback,removeFirst,removeFirstIf,removeFirstIf,removeFirst,removeImage,removeLast,removeLastIf,removeLastIf,removeLast,removeTarget,remove,report,requireClassMapping,resize,resize,result,runForever,runOnce,safeOp,satisfy,selectKey,selectValue,sequence,setCapacity,setControlledPanel,setHistorySize,setLevel,setLevels,setPath,setProperty,setProperty,setSeed,setValue,set,set,shift,shift,shortClassName,shuffle,shuffle,shutdown,shutdown,shutdown,shutdown,shutdown,simpleToString,simpleToString,size,size,size,size,some,some,some,sort,sortOn,sortOn,sort,sortedInsert,sortedInsert,splice,splice,sprintf,stableSort,stableSort,start,startsWith,stripDotSuffix,stripPath,stripPathAndDotSuffix,substitute,testing,throttleOp,throttleOpAt,timestampAt,tinyClassName,toArray,toArray,toByte,toBytes,toColorString,toCoordsString,toDegrees,toHex,toRadians,toString,toString,toString,toString,toString,toString,toString,toTitleCase,toXMLString,transpose,transpose,trim,trimBeginning,trimEnd,truncate,unfuckVarargs,unhexlate,union,unit,unregisterListener,unregisterListener,unshift,validateDecimal,valueOf,valueOf,values,values,values,warning,wipe,withElements,wouldThrottle,xml"><title>com.threerings.util.TimeBuffer</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'TimeBuffer - API Documentation';
 				var baseRef = '../../../';
 				window.onload = configPage;
 			--></script>
-<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
-<tr>
-<td align="left" class="titleTableTitle">Aspirin API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?com/threerings/util/TimeBuffer.html&amp;com/threerings/util/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
-</tr>
-<tr class="titleTableRow2">
-<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;TimeBuffer</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
-</tr>
-<tr class="titleTableRow3">
-<td colspan="2">&nbsp;</td>
-</tr>
-</table>
-<script type="text/javascript" language="javascript">
-<!--
-if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class TimeBuffer"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
---></script>
-<div class="MainContent">
-<table cellspacing="0" cellpadding="0" class="classHeaderTable">
-<tr>
-<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.threerings.util</a></td>
-</tr>
-<tr>
-<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class TimeBuffer</td>
-</tr>
-</table>
-<p></p>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/threerings/util/TimeBuffer.html&amp;com/threerings/util/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">TimeBuffer</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("TimeBuffer"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.threerings.util</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  TimeBuffer</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">TimeBuffer  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
  A data structure that keeps a list of objects, timestamped at the time they were added
  to the buffer. Objects that have lived in the buffer for a specified amount of time
  will be efficiently removed.
   TimeBuffer does not remove old elements automatically; they are removed when new entries
  are push()'d to the buffer, or when pruneOldEntries() is called.
- <p></p>
-<br>
-<hr>
-</div>
-<a name="propertySummary"></a>
-<div class="summarySection">
-<div class="summaryTableTitle">Public Properties</div>
-<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
-<tr>
-<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#empty">empty</a> : Boolean<div class="summaryTableDescription">[read-only] Returns true if the TimeBuffer contains 0 elements.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#length">length</a> : uint<div class="summaryTableDescription">[read-only] Returns the number of elements currently stored in the TimeBuffer.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxAge">maxAge</a> : int<div class="summaryTableDescription">[write-only]
-     Sets the maximum age of items in the buffer, in milliseconds.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-</table>
-</div>
-<a name="protectedPropertySummary"></a>
-<div class="summarySection">
-<div class="summaryTableTitle">Protected Properties</div>
-<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
-<tr>
-<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_array">_array</a> : Array<div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_firstIndex">_firstIndex</a> : uint<div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_length">_length</a> : uint<div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_maxAge">_maxAge</a> : int<div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_timerFn">_timerFn</a> : Function<div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-</table>
-</div>
-<a name="methodSummary"></a>
-<div class="summarySection">
-<div class="summaryTableTitle">Public Methods</div>
-<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
-<tr>
-<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#TimeBuffer()">TimeBuffer</a>(maxAge:int = 0, initialCapacity:int = 10, timerFn:Function = null)</div>
-<div class="summaryTableDescription">
-     Constructs a new TimeBuffer.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#at()">at</a>(index:uint):*</div>
-<div class="summaryTableDescription">
+ <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#empty" class="signatureLink">empty</a> : Boolean<div class="summaryTableDescription">[read-only]  Returns true if the TimeBuffer contains 0 elements.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#length" class="signatureLink">length</a> : uint<div class="summaryTableDescription">[read-only]  Returns the number of elements currently stored in the TimeBuffer.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#maxAge" class="signatureLink">maxAge</a> : int<div class="summaryTableDescription">[write-only] 
+     Sets the maximum age of items in the buffer, in milliseconds.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr></table></div><a name="protectedPropertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_array" class="signatureLink">_array</a> : Array<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_firstIndex" class="signatureLink">_firstIndex</a> : uint<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_length" class="signatureLink">_length</a> : uint<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_maxAge" class="signatureLink">_maxAge</a> : int<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#_timerFn" class="signatureLink">_timerFn</a> : Function<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#TimeBuffer()" class="signatureLink">TimeBuffer</a>(maxAge:int = 0, initialCapacity:int = 10, timerFn:Function = null)</div><div class="summaryTableDescription">
+     Constructs a new TimeBuffer.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#at()" class="signatureLink">at</a>(index:uint):*</div><div class="summaryTableDescription">
      Returns the element at the specified index,
-     or undefined if index is out of bounds.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#clear()">clear</a>():void</div>
-<div class="summaryTableDescription"> Removes all elements from the TimeBuffer.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#every()">every</a>(callback:Function):Boolean</div>
-<div class="summaryTableDescription">
+     or undefined if index is out of bounds.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clear()" class="signatureLink">clear</a>():void</div><div class="summaryTableDescription"> Removes all elements from the TimeBuffer.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#every()" class="signatureLink">every</a>(callback:Function):Boolean</div><div class="summaryTableDescription">
      Executes a test function on each item in the ring buffer
      until an item is reached that returns false for the specified
-     function.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#forEach()">forEach</a>(callback:Function):void</div>
-<div class="summaryTableDescription">
-     Executes a function on each item in the buffer.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#indexOf()">indexOf</a>(searchElement:*, fromIndex:int = 0):int</div>
-<div class="summaryTableDescription">
+     function.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#forEach()" class="signatureLink">forEach</a>(callback:Function):void</div><div class="summaryTableDescription">
+     Executes a function on each item in the buffer.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#indexOf()" class="signatureLink">indexOf</a>(searchElement:*, fromIndex:int = 0):int</div><div class="summaryTableDescription">
      Searches for an item in the ring buffer by using strict equality
      (===) and returns the index position of the item, or -1
-     if the item is not found.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#pop()">pop</a>():*</div>
-<div class="summaryTableDescription">
-     Removes the last element from the TimeBuffer and returns it.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#pruneOldEntries()">pruneOldEntries</a>(minTimestamp:int):void</div>
-<div class="summaryTableDescription">
-     Removes all entries whose age is < minTimestamp from the TimeBuffer.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#push()">push</a>(... args):uint</div>
-<div class="summaryTableDescription">
-     Adds the specified elements to the back of the TimeBuffer.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#shift()">shift</a>():*</div>
-<div class="summaryTableDescription">
-     Removes the first element from the TimeBuffer and returns it.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#timestampAt()">timestampAt</a>(index:uint):int</div>
-<div class="summaryTableDescription">
+     if the item is not found.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pop()" class="signatureLink">pop</a>():*</div><div class="summaryTableDescription">
+     Removes the last element from the TimeBuffer and returns it.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pruneOldEntries()" class="signatureLink">pruneOldEntries</a>(minTimestamp:int):void</div><div class="summaryTableDescription">
+     Removes all entries whose age is &lt; minTimestamp from the TimeBuffer.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#push()" class="signatureLink">push</a>(... args):uint</div><div class="summaryTableDescription">
+     Adds the specified elements to the back of the TimeBuffer.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#shift()" class="signatureLink">shift</a>():*</div><div class="summaryTableDescription">
+     Removes the first element from the TimeBuffer and returns it.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#timestampAt()" class="signatureLink">timestampAt</a>(index:uint):int</div><div class="summaryTableDescription">
      Returns the timestamp of the element at the specified index,
-     or -1 if index is out of bounds.</div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-</table>
-</div>
-<a name="protectedMethodSummary"></a>
-<div class="summarySection">
-<div class="summaryTableTitle">Protected Methods</div>
-<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
-<tr>
-<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#entryAt()">entryAt</a>(index:uint):Entry</div>
-<div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#setCapacity()">setCapacity</a>(newCapacity:uint):void</div>
-<div class="summaryTableDescription"></div>
-</td><td class="summaryTableOwnerCol">TimeBuffer</td>
-</tr>
-</table>
-</div>
-<script type="text/javascript" language="javascript">
-<!--
-showHideInherited();
---></script>
-<div class="MainContent">
-<a name="propertyDetail"></a>
-<div class="detailSectionHeader">Property detail</div>
-<a name="_array"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">_array</td><td class="detailHeaderType">property</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>protected var _array:Array</code>
-</div>
-<a name="empty"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">empty</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>empty:Boolean</code>&nbsp;&nbsp;[read-only]<p> Returns true if the TimeBuffer contains 0 elements. </p><span class="label">Implementation</span>
-<br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get empty():Boolean</code>
-<br>
-</div>
-<a name="_firstIndex"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">_firstIndex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>protected var _firstIndex:uint</code>
-</div>
-<a name="_length"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">_length</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>protected var _length:uint</code>
-</div>
-<a name="length"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">length</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>length:uint</code>&nbsp;&nbsp;[read-only]<p> Returns the number of elements currently stored in the TimeBuffer. </p><span class="label">Implementation</span>
-<br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():uint</code>
-<br>
-</div>
-<a name="_maxAge"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">_maxAge</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>protected var _maxAge:int</code>
-</div>
-<a name="maxAge"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">maxAge</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>maxAge:int</code>&nbsp;&nbsp;[write-only]<p>
+     or -1 if index is out of bounds.</div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr></table></div><a name="protectedMethodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Protected Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProtectedMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#entryAt()" class="signatureLink">entryAt</a>(index:uint):Entry</div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setCapacity()" class="signatureLink">setCapacity</a>(newCapacity:uint):void</div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">TimeBuffer</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="_array"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_array</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>protected var _array:Array</code><p></p></div><a name="propertyDetail"></a><a name="_firstIndex"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_firstIndex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _firstIndex:uint</code><p></p></div><a name="propertyDetail"></a><a name="_length"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_length</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _length:uint</code><p></p></div><a name="propertyDetail"></a><a name="_maxAge"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_maxAge</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _maxAge:int</code><p></p></div><a name="propertyDetail"></a><a name="_timerFn"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">_timerFn</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>protected var _timerFn:Function</code><p></p></div><a name="propertyDetail"></a><a name="empty"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">empty</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>empty:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p> Returns true if the TimeBuffer contains 0 elements. </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get empty():Boolean</code><br/></div><a name="propertyDetail"></a><a name="length"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">length</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>length:uint</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p> Returns the number of elements currently stored in the TimeBuffer. </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():uint</code><br/></div><a name="propertyDetail"></a><a name="maxAge"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">maxAge</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>maxAge:int</code>&nbsp;&nbsp;[write-only] <p></p><p></p><p>
      Sets the maximum age of items in the buffer, in milliseconds.
      Whenever new items are added, items older than the maxAge will be removed.
-     </p><span class="label">Implementation</span>
-<br>
-<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxAge(value:int):void</code>
-<br>
-</div>
-<a name="_timerFn"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">_timerFn</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>protected var _timerFn:Function</code>
-</div>
-<a name="constructorDetail"></a>
-<div class="detailSectionHeader">Constructor detail</div>
-<a name="TimeBuffer()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">TimeBuffer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function TimeBuffer(maxAge:int = 0, initialCapacity:int = 10, timerFn:Function = null)</code><p>
+     </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxAge(value:int):void</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="TimeBuffer()"></a><a name="TimeBuffer(int,int,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">TimeBuffer</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function TimeBuffer(maxAge:int = 0, initialCapacity:int = 10, timerFn:Function = null)</code><p></p><p>
      Constructs a new TimeBuffer.
-          </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">maxAge</span>:int</code> (default = <code>0</code>)<code></code> &mdash; the time, in milliseconds, that an entry can live in the TimeBuffer before
-     being removed. If maxAge <= 0, elements will never be removed. Defaults to 0.
-          </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">initialCapacity</span>:int</code> (default = <code>10</code>)<code></code></td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">timerFn</span>:Function</code> (default = <code>null</code>)<code></code></td>
-</tr>
-</table>
-</div>
-<a name="methodDetail"></a>
-<div class="detailSectionHeader">Method detail</div>
-<a name="at()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">at</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function at(index:uint):*</code><p>
+          </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">maxAge</span>:int</code> (default = <code>0</code>)<code></code> &mdash; the time, in milliseconds, that an entry can live in the TimeBuffer before
+     being removed. If maxAge &lt;= 0, elements will never be removed. Defaults to 0.
+          </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">initialCapacity</span>:int</code> (default = <code>10</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">timerFn</span>:Function</code> (default = <code>null</code>)<code></code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="at()"></a><a name="at(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">at</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function at(index:uint):*</code><p></p><p></p><p>
      Returns the element at the specified index,
      or undefined if index is out of bounds.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">index</span>:uint</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>*</code></td>
-</tr>
-</table>
-</div>
-<a name="clear()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function clear():void</code><p> Removes all elements from the TimeBuffer. </p></div>
-<a name="entryAt()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">entryAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>protected function entryAt(index:uint):Entry</code><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">index</span>:uint</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Entry</code></td>
-</tr>
-</table>
-</div>
-<a name="every()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">every</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function every(callback:Function):Boolean</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>*</code></td></tr></table></div><a name="clear()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clear</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function clear():void</code><p></p><p></p><p> Removes all elements from the TimeBuffer. </p></div><a name="entryAt()"></a><a name="entryAt(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">entryAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function entryAt(index:uint):Entry</code><p></p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Entry</code></td></tr></table></div><a name="every()"></a><a name="every(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">every</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function every(callback:Function):Boolean</code><p></p><p></p><p>
      Executes a test function on each item in the ring buffer
      until an item is reached that returns false for the specified
      function.
           function test (data : timestamp :int) :Boolean
           Returns a Boolean value of true if all items in the buffer return
      true for the specified function; otherwise, false.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">callback</span>:Function</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Boolean</code></td>
-</tr>
-</table>
-</div>
-<a name="forEach()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">forEach</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function forEach(callback:Function):void</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code></td></tr></table></div><a name="forEach()"></a><a name="forEach(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">forEach</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function forEach(callback:Function):void</code><p></p><p></p><p>
      Executes a function on each item in the buffer.
      function callback (data : timestamp :int) :void
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">callback</span>:Function</code></td>
-</tr>
-</table>
-</div>
-<a name="indexOf()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">indexOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function indexOf(searchElement:*, fromIndex:int = 0):int</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">callback</span>:Function</code></td></tr></table></p></div><a name="indexOf()"></a><a name="indexOf(any,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">indexOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function indexOf(searchElement:*, fromIndex:int = 0):int</code><p></p><p></p><p>
      Searches for an item in the ring buffer by using strict equality
      (===) and returns the index position of the item, or -1
      if the item is not found.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">searchElement</span>:*</code></td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">fromIndex</span>:int</code> (default = <code>0</code>)<code></code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>int</code></td>
-</tr>
-</table>
-</div>
-<a name="pop()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">pop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function pop():*</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">searchElement</span>:*</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">fromIndex</span>:int</code> (default = <code>0</code>)<code></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code></td></tr></table></div><a name="pop()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pop():*</code><p></p><p></p><p>
      Removes the last element from the TimeBuffer and returns it.
      If the TimeBuffer is empty, pop() will return undefined.
-     </p><p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>*</code></td>
-</tr>
-</table>
-</div>
-<a name="pruneOldEntries()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">pruneOldEntries</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function pruneOldEntries(minTimestamp:int):void</code><p>
-     Removes all entries whose age is < minTimestamp from the TimeBuffer.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">minTimestamp</span>:int</code></td>
-</tr>
-</table>
-</div>
-<a name="push()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">push</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function push(... args):uint</code><p>
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>*</code></td></tr></table></div><a name="pruneOldEntries()"></a><a name="pruneOldEntries(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pruneOldEntries</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pruneOldEntries(minTimestamp:int):void</code><p></p><p></p><p>
+     Removes all entries whose age is &lt; minTimestamp from the TimeBuffer.
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">minTimestamp</span>:int</code></td></tr></table></p></div><a name="push()"></a><a name="push(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">push</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function push(... args):uint</code><p></p><p></p><p>
      Adds the specified elements to the back of the TimeBuffer.
      Returns the new length of the TimeBuffer.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code>... <span class="label">args</span></code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>uint</code></td>
-</tr>
-</table>
-</div>
-<a name="setCapacity()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">setCapacity</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>protected function setCapacity(newCapacity:uint):void</code><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">newCapacity</span>:uint</code></td>
-</tr>
-</table>
-</div>
-<a name="shift()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">shift</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function shift():*</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">args</span></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>uint</code></td></tr></table></div><a name="setCapacity()"></a><a name="setCapacity(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setCapacity</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> protected function setCapacity(newCapacity:uint):void</code><p></p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">newCapacity</span>:uint</code></td></tr></table></p></div><a name="shift()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">shift</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function shift():*</code><p></p><p></p><p>
      Removes the first element from the TimeBuffer and returns it.
      If the TimeBuffer is empty, shift() will return undefined.
-     </p><p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>*</code></td>
-</tr>
-</table>
-</div>
-<a name="timestampAt()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">timestampAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public function timestampAt(index:uint):int</code><p>
+     </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>*</code></td></tr></table></div><a name="timestampAt()"></a><a name="timestampAt(uint)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">timestampAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function timestampAt(index:uint):int</code><p></p><p></p><p>
      Returns the timestamp of the element at the specified index,
      or -1 if index is out of bounds.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">index</span>:uint</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>int</code></td>
-</tr>
-</table>
-</div>
-<br>
-<br>
-<hr>
-<br>
-<p></p>
-<center class="copyright">Copyright&nbsp;&copy;&nbsp;2007-2010 Three Rings Design, Inc.</center>
-</div>
-</body>
-</html>
-<!--Copyright © 2007-2010 Three Rings Design, Inc.-->
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">index</span>:uint</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code></td></tr></table></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Fri Jul 1 2011, 12:56 PM -07:00  </center></div></body></html><!--<br/>Fri Jul 1 2011, 12:56 PM -07:00  -->

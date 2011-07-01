@@ -1,448 +1,84 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
-<meta content="Maps,com.threerings.util.Maps,equals,filter,findKey,newBuilder,newMapOf,newSortedMapOf,selectKey,selectValue,some" name="keywords">
-<title>com.threerings.util.Maps</title>
-</head>
-<body>
-<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
-<!--
-				asdocTitle = 'Maps - Aspirin API Documentation';
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="Maps,com.threerings.util.Maps,adapt,adapt,adapt,add,add,add,addAll,addArgs,addArgsArray,addAt,addCallback,addFields,addTarget,add,adopt,and,appendReport,apply,argToString,argify,args,argsArray,asyncForEach,at,at,binary,binarySearch,binarySearch,bind,build,calcStats,call,callLater,callProperty,callWhenTrue,callWhenTrue,callback,callbackOnce,call,cancelAllTimers,cancelTimer,capitalize,checkArgument,checkIndex,checkNotNull,checkRange,checkReport,checkSets,checkState,clamp,clear,clear,clear,clear,clear,clone,clone,clone,clone,clone,close,compare,compare,compare,compareBooleans,compareBooleans,compareComparables,compareComparables,compareEnumsByName,compareIgnoreCase,compareInts,compareInts,compareNumbers,compareNumbers,compareStrings,compareStrings,compareStringsIgnoreCase,compareStringsInsensitively,compareTo,compareTo,compareUnknowns,compose,configureBridge,constant,constructor,constructorParamTypes,contains,contains,containsKey,contains,contains,contentType,copy,copyOf,copyOf,copy,create,create,createAnd,createEquals,createFields,createFor,createFor,createHasProperty,createIn,createIs,createNot,createNullSafe,createOr,createPropertyEquals,createReverse,createTimer,create,deNull,debug,delayFrame,delayFrame,delayFrame,delayFrames,delayFrames,delayFrames,deleteProperty,deleteProperty,difference,dispatch,dispatch,distance,doReport,doWhen,doWipe,dumpStack,endsWith,ensureCapacity,enter,entryAt,equals,equals,equals,equals,equals,equals,equals,equals,error,every,every,every,exit,fail,failureLogger,fill,fill,filter,filter,findIf,findIf,findKey,finishedEnumerating,floorDiv,foldl,forEach,forEach,forEach,forEach,forEach,forEach,format,formatNumber,freeAllHandlers,freeAllHandlers,freeAllOn,fromByte,fromBytes,get,get,getArray,getAttr,getBitmapData,getBoolean,getBooleanAttr,getClassByName,getClassName,getClass,getColor,getConstructorParamTypes,getConstructor,getContents,getConversationalDateString,getData,getDayName,getDefault,getDisplayObjects,getDotSuffix,getEnumAttr,getEnumSetAttr,getErrString,getFile,getFileAsString,getFileAsXML,getFiles,getFlashMajorVersion,getFlashVersion,getGlobalManager,getImage,getInfoParameters,getInt,getIntAttr,getIntersection,getIntersectionPoint,getIntersectionType,getLatestOperation,getLength,getLoaders,getLoaders,getLog,getMonthName,getNumber,getNumberAttr,getParameters,getPoint,getProperty,getPropertyNames,getProperty,getRectangle,getSingleChildText,getSingleChild,getString,getStringArrayAttr,getStringAttr,getText,getUintAttr,getValue,getWeightedIndex,get,get,get,handleAction,handleComplete,handleError,hasAttribute,hasAttr,hasChild,hasProperty,hashCode,hashCode,hashCode,hexdump,hexlate,id,immutable,imul,indexIf,indexIf,indexOf,indexOf,indexOf,indexOf,indexOf,info,init,instantiateAllChildren,instantiateNode,intersection,isAssignableAs,isBlank,isComplete,isEmpty,isEmpty,isEmpty,isFalse,isFlash10,isImageLoaded,isIntersected,isLowerCase,isNotNull,isNull,isNull,isPersisting,isPlainObject,isSameClass,isSimple,isTrue,isUpperCase,isValidAddress,isWhitespace,justOnce,keys,keys,lastIndexOf,listen,listenForSizeChange,load,loadClasses,loadImage,log,logStackTrace,logWarning,log,map,map,mapWithClassName,markAsHandled,max,max,min,min,name,navigateToURL,newBuilder,newBuilder,newClassMap,newInstance,newList,newMapOf,newSetOf,newSortedMapOf,newSortedSetOf,newXML,nextBoolean,nextInt,nextName,nextNameIndex,nextNameIndex,nextName,nextNumber,nextValue,nextValue,next,normalizeDegrees,normalizeRadians,notNull,noteOp,onEachAdd,onEachRemove,onEnterFirstFrame,onEnterFrame,onFailure,onLoadComplete,onLoadError,onSuccess,opsToString,ordinal,output,pad,padToLength,padToLength,pairs,pairsArray,parallelForEach,parseBoolean,parseEnumSet,parseInt0,parseInteger,parseNumber,parseStringMember,parseURLs,parseUnsignedInteger,parser,partial,pickRandom,pop,pop,postAction,post,prepad,processProperty,pruneOldEntries,push,push,put,range,range,registerListener,registerListener,registerListenerUntil,registerListenerUntil,registerOne,registerOneShotCallback,registerOneShotCallback,registerUnload,registerUnload,reinit,remove,remove,remove,remove,removeAll,removeAllIf,removeAllIf,removeAll,removeAt,removeCallback,removeFirst,removeFirstIf,removeFirstIf,removeFirst,removeImage,removeLast,removeLastIf,removeLastIf,removeLast,removeTarget,remove,report,requireClassMapping,resize,resize,result,runForever,runOnce,safeOp,satisfy,selectKey,selectValue,sequence,setCapacity,setControlledPanel,setHistorySize,setLevel,setLevels,setPath,setProperty,setProperty,setSeed,setValue,set,set,shift,shift,shortClassName,shuffle,shuffle,shutdown,shutdown,shutdown,shutdown,shutdown,simpleToString,simpleToString,size,size,size,size,some,some,some,sort,sortOn,sortOn,sort,sortedInsert,sortedInsert,splice,splice,sprintf,stableSort,stableSort,start,startsWith,stripDotSuffix,stripPath,stripPathAndDotSuffix,substitute,testing,throttleOp,throttleOpAt,timestampAt,tinyClassName,toArray,toArray,toByte,toBytes,toColorString,toCoordsString,toDegrees,toHex,toRadians,toString,toString,toString,toString,toString,toString,toString,toTitleCase,toXMLString,transpose,transpose,trim,trimBeginning,trimEnd,truncate,unfuckVarargs,unhexlate,union,unit,unregisterListener,unregisterListener,unshift,validateDecimal,valueOf,valueOf,values,values,values,warning,wipe,withElements,wouldThrottle,xml"><title>com.threerings.util.Maps</title><script src="../../../AC_OETags.js" type="text/javascript"></script></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Maps - API Documentation';
 				var baseRef = '../../../';
 				window.onload = configPage;
 			--></script>
-<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
-<tr>
-<td align="left" class="titleTableTitle">Aspirin API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?com/threerings/util/Maps.html&amp;com/threerings/util/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
-</tr>
-<tr class="titleTableRow2">
-<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Maps</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a></td>
-</tr>
-<tr class="titleTableRow3">
-<td colspan="2">&nbsp;</td>
-</tr>
-</table>
-<script type="text/javascript" language="javascript">
-<!--
-if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Maps"); titleBar_setSubNav(false,false,false,false,false,false,true,false,false,false,false,false,false,false);}
---></script>
-<div class="MainContent">
-<table cellspacing="0" cellpadding="0" class="classHeaderTable">
-<tr>
-<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.threerings.util</a></td>
-</tr>
-<tr>
-<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Maps</td>
-</tr>
-</table>
-<p></p>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?com/threerings/util/Maps.html&amp;com/threerings/util/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Maps</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#includeExamplesSummary">Examples</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Maps"); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,true,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.threerings.util</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Maps</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Maps  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
  Factory methods for creating various Maps.
-  <p></p>
-<br>
-<span class="label">Example</span>
-<br> <div class='listing'><pre>
- // maps userId (int) to name (String)
- var userNames :Map = Maps.newMapOf(int);
- </pre></div>
-  <p></p> <div class='listing'><pre>
- // maps a Hashable Page class to page objects, in a cache: pages will expire when they
- // are no longer externally referenced.
- var pages :Map = Maps.newBuilder(Page).makeWeakValues().build();
- </pre></div>
- <p></p>
-<br>
-<hr>
-</div>
-<a name="methodSummary"></a>
-<div class="summarySection">
-<div class="summaryTableTitle">Public Methods</div>
-<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
-<tr>
-<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#equals()">equals</a>(map1:<a href="Map.html">Map</a>, map2:<a href="Map.html">Map</a>):Boolean</div>
-<div class="summaryTableDescription">[static]
+  <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#equals()" class="signatureLink">equals</a>(map1:<a href="../../../com/threerings/util/Map.html">Map</a>, map2:<a href="../../../com/threerings/util/Map.html">Map</a>):Boolean</div><div class="summaryTableDescription">[static] 
      Do the two Maps contain the same keys and values?
-     </div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#filter()">filter</a>(map:<a href="Map.html">Map</a>, condition:Function, transform:Function = null):Array</div>
-<div class="summaryTableDescription">[static]
+     </div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#filter()" class="signatureLink">filter</a>(map:<a href="../../../com/threerings/util/Map.html">Map</a>, condition:Function, transform:Function = null):Array</div><div class="summaryTableDescription">[static] 
      Filters all the entries in a map against a condition, transforms those that meet the
-     condition and returns an array of the transformed, filtered entries.</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#findKey()">findKey</a>(map:<a href="Map.html">Map</a>, value:Object):*</div>
-<div class="summaryTableDescription">[static]
-     Return the first key found for the specified value, or undefined if not found.</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#newBuilder()">newBuilder</a>(keyClazz:Class):<a href="maps/MapBuilder.html">MapBuilder</a>
-</div>
-<div class="summaryTableDescription">[static]
-     Create a MapBuilder for creating a more complicated Map type.</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#newMapOf()">newMapOf</a>(keyClazz:Class):<a href="../util/Map.html">Map</a>
-</div>
-<div class="summaryTableDescription">[static]
-     Create a new Map designed to hold keys of the specified class.</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#newSortedMapOf()">newSortedMapOf</a>(keyClazz:Class, comp:Function = null):<a href="../util/Map.html">Map</a>
-</div>
-<div class="summaryTableDescription">[static]
-     Create a new sorted Map designed to hold keys of the specified class.</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#selectKey()">selectKey</a>(key:Object, value:Object):Object</div>
-<div class="summaryTableDescription">[static]
-     Returns the key of a map entry (for use as a transform function in <code>filter</code>).</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#selectValue()">selectValue</a>(key:Object, value:Object):Object</div>
-<div class="summaryTableDescription">[static]
-     Returns the value of a map entry (for use as a transform function in <code>filter</code>).</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-<tr class="">
-<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
-<div class="summarySignature">
-<a class="signatureLink" href="#some()">some</a>(map:<a href="Map.html">Map</a>, condition:Function):Boolean</div>
-<div class="summaryTableDescription">[static]
-     Tests if at least one entry in a map meets a condition.</div>
-</td><td class="summaryTableOwnerCol">Maps</td>
-</tr>
-</table>
-</div>
-<script type="text/javascript" language="javascript">
-<!--
-showHideInherited();
---></script>
-<div class="MainContent">
-<a name="methodDetail"></a>
-<div class="detailSectionHeader">Method detail</div>
-<a name="equals()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">equals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function equals(map1:<a href="Map.html">Map</a>, map2:<a href="Map.html">Map</a>):Boolean</code><p>
+     condition and returns an array of the transformed, filtered entries.</div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#findKey()" class="signatureLink">findKey</a>(map:<a href="../../../com/threerings/util/Map.html">Map</a>, value:Object):*</div><div class="summaryTableDescription">[static] 
+     Return the first key found for the specified value, or undefined if not found.</div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#newBuilder()" class="signatureLink">newBuilder</a>(keyClazz:Class):<a href="../../../com/threerings/util/maps/MapBuilder.html">MapBuilder</a></div><div class="summaryTableDescription">[static] 
+     Create a MapBuilder for creating a more complicated Map type.</div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#newMapOf()" class="signatureLink">newMapOf</a>(keyClazz:Class):<a href="../../../com/threerings/util/Map.html">Map</a></div><div class="summaryTableDescription">[static] 
+     Create a new Map designed to hold keys of the specified class.</div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#newSortedMapOf()" class="signatureLink">newSortedMapOf</a>(keyClazz:Class, comp:Function = null):<a href="../../../com/threerings/util/Map.html">Map</a></div><div class="summaryTableDescription">[static] 
+     Create a new sorted Map designed to hold keys of the specified class.</div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#selectKey()" class="signatureLink">selectKey</a>(key:Object, value:Object):Object</div><div class="summaryTableDescription">[static] 
+     Returns the key of a map entry (for use as a transform function in filter).</div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#selectValue()" class="signatureLink">selectValue</a>(key:Object, value:Object):Object</div><div class="summaryTableDescription">[static] 
+     Returns the value of a map entry (for use as a transform function in filter).</div></td><td class="summaryTableOwnerCol">Maps</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#some()" class="signatureLink">some</a>(map:<a href="../../../com/threerings/util/Map.html">Map</a>, condition:Function):Boolean</div><div class="summaryTableDescription">[static] 
+     Tests if at least one entry in a map meets a condition.</div></td><td class="summaryTableOwnerCol">Maps</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="equals()"></a><a name="equals(com.threerings.util.Map,com.threerings.util.Map)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">equals</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function equals(map1:<a href="../../../com/threerings/util/Map.html">Map</a>, map2:<a href="../../../com/threerings/util/Map.html">Map</a>):Boolean</code><p></p><p></p><p>
      Do the two Maps contain the same keys and values?
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">map1</span>:<a href="Map.html">Map</a></code></td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">map2</span>:<a href="Map.html">Map</a></code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Boolean</code></td>
-</tr>
-</table>
-</div>
-<a name="filter()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">filter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function filter(map:<a href="Map.html">Map</a>, condition:Function, transform:Function = null):Array</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">map1</span>:<a href="../../../com/threerings/util/Map.html">Map</a></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">map2</span>:<a href="../../../com/threerings/util/Map.html">Map</a></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code></td></tr></table></div><a name="filter()"></a><a name="filter(com.threerings.util.Map,Function,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">filter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function filter(map:<a href="../../../com/threerings/util/Map.html">Map</a>, condition:Function, transform:Function = null):Array</code><p></p><p></p><p>
      Filters all the entries in a map against a condition, transforms those that meet the
      condition and returns an array of the transformed, filtered entries.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">map</span>:<a href="Map.html">Map</a></code> &mdash; the map whose entries are to be filtered
-     </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">condition</span>:Function</code> &mdash; the function to test whether to include an entry:
-         <div class='listing'><pre>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">map</span>:<a href="../../../com/threerings/util/Map.html">Map</a></code> &mdash; the map whose entries are to be filtered
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">condition</span>:Function</code> &mdash; the function to test whether to include an entry:
+         <div class="listing" version="3.0"><pre>
              function condition (key :Object, value :Object) :Boolean
          </pre></div>
-     </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">transform</span>:Function</code> (default = <code>null</code>)<code></code> &mdash; the function to obtain an entry in the resulting array:
-         <div class='listing'><pre>
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">transform</span>:Function</code> (default = <code>null</code>)<code></code> &mdash; the function to obtain an entry in the resulting array:
+         <div class="listing" version="3.0"><pre>
              function transform (key :Object, value :Object) :Object
          </pre></div>
          If the transform is null, the map values are returned.
-     </td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Array</code></td>
-</tr>
-</table>
-</div>
-<a name="findKey()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">findKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function findKey(map:<a href="Map.html">Map</a>, value:Object):*</code><p>
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Array</code></td></tr></table></div><a name="findKey()"></a><a name="findKey(com.threerings.util.Map,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">findKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function findKey(map:<a href="../../../com/threerings/util/Map.html">Map</a>, value:Object):*</code><p></p><p></p><p>
      Return the first key found for the specified value, or undefined if not found.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">map</span>:<a href="Map.html">Map</a></code></td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">value</span>:Object</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>*</code></td>
-</tr>
-</table>
-</div>
-<a name="newBuilder()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">newBuilder</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function newBuilder(keyClazz:Class):<a href="maps/MapBuilder.html">MapBuilder</a></code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">map</span>:<a href="../../../com/threerings/util/Map.html">Map</a></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">value</span>:Object</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>*</code></td></tr></table></div><a name="newBuilder()"></a><a name="newBuilder(Class)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">newBuilder</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function newBuilder(keyClazz:Class):<a href="../../../com/threerings/util/maps/MapBuilder.html">MapBuilder</a></code><p></p><p></p><p>
      Create a MapBuilder for creating a more complicated Map type.
-          </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">keyClazz</span>:Class</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code><a href="maps/MapBuilder.html">MapBuilder</a></code></td>
-</tr>
-</table>
-<br>
-<span class="label">Example</span>
-<br>     <div class='listing'><pre>
+          </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">keyClazz</span>:Class</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../com/threerings/util/maps/MapBuilder.html">MapBuilder</a></code></td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody"><div class="listing" version="3.0"><pre>
      // builds a sorted, weak-value Map.
      var myMap :Map = Maps.newBuilder(String)
          .makeSorted()
          .makeWeakValues()
          .build();
      </pre></div>
-     <p></p>
-</div>
-<a name="newMapOf()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">newMapOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function newMapOf(keyClazz:Class):<a href="../util/Map.html">Map</a></code><p>
+     </div></div><a name="newMapOf()"></a><a name="newMapOf(Class)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">newMapOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function newMapOf(keyClazz:Class):<a href="../../../com/threerings/util/Map.html">Map</a></code><p></p><p></p><p>
      Create a new Map designed to hold keys of the specified class.
      If the class is Hashable (but not an Enum) then a HashMap will be used, otherwise a
      DictionaryMap. If your key type is not Hashable, then be sure that reference equality
      (the == operator) can be used to compare your keys!
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">keyClazz</span>:Class</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code><a href="../util/Map.html">Map</a></code></td>
-</tr>
-</table>
-</div>
-<a name="newSortedMapOf()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">newSortedMapOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function newSortedMapOf(keyClazz:Class, comp:Function = null):<a href="../util/Map.html">Map</a></code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">keyClazz</span>:Class</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../com/threerings/util/Map.html">Map</a></code></td></tr></table></div><a name="newSortedMapOf()"></a><a name="newSortedMapOf(Class,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">newSortedMapOf</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function newSortedMapOf(keyClazz:Class, comp:Function = null):<a href="../../../com/threerings/util/Map.html">Map</a></code><p></p><p></p><p>
      Create a new sorted Map designed to hold keys of the specified class.
           If the comparator is omitted, it is determined from the keyClazz, or falls back to
      Comparators.compareUnknown.
           This is a convenience for calling newBuilder(keyClazz).makeSorted(comp).build();
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">keyClazz</span>:Class</code></td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">comp</span>:Function</code> (default = <code>null</code>)<code></code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code><a href="../util/Map.html">Map</a></code></td>
-</tr>
-</table>
-</div>
-<a name="selectKey()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">selectKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function selectKey(key:Object, value:Object):Object</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">keyClazz</span>:Class</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">comp</span>:Function</code> (default = <code>null</code>)<code></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../com/threerings/util/Map.html">Map</a></code></td></tr></table></div><a name="selectKey()"></a><a name="selectKey(Object,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">selectKey</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function selectKey(key:Object, value:Object):Object</code><p></p><p></p><p>
      Returns the key of a map entry (for use as a transform function in <code>filter</code>).
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">key</span>:Object</code></td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">value</span>:Object</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Object</code></td>
-</tr>
-</table>
-</div>
-<a name="selectValue()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">selectValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function selectValue(key:Object, value:Object):Object</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:Object</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">value</span>:Object</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code></td></tr></table></div><a name="selectValue()"></a><a name="selectValue(Object,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">selectValue</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function selectValue(key:Object, value:Object):Object</code><p></p><p></p><p>
      Returns the value of a map entry (for use as a transform function in <code>filter</code>).
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">key</span>:Object</code></td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">value</span>:Object</code></td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Object</code></td>
-</tr>
-</table>
-</div>
-<a name="some()"></a>
-<table cellspacing="0" cellpadding="0" class="detailHeader">
-<tr>
-<td class="detailHeaderName">some</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
-</tr>
-</table>
-<div class="detailBody">
-<code>public static function some(map:<a href="Map.html">Map</a>, condition:Function):Boolean</code><p>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">key</span>:Object</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">value</span>:Object</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Object</code></td></tr></table></div><a name="some()"></a><a name="some(com.threerings.util.Map,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">some</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function some(map:<a href="../../../com/threerings/util/Map.html">Map</a>, condition:Function):Boolean</code><p></p><p></p><p>
      Tests if at least one entry in a map meets a condition.
-     </p><span class="label">Parameters</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20px"></td><td><code><span class="label">map</span>:<a href="Map.html">Map</a></code> &mdash; the map whose entries are to be tested
-     </td>
-</tr>
-<tr>
-<td class="paramSpacer">&nbsp;</td>
-</tr>
-<tr>
-<td width="20px"></td><td><code><span class="label">condition</span>:Function</code> &mdash; a function that tests a map entry:
-     <div class='listing'><pre>
+     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">map</span>:<a href="../../../com/threerings/util/Map.html">Map</a></code> &mdash; the map whose entries are to be tested
+     </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">condition</span>:Function</code> &mdash; a function that tests a map entry:
+     <div class="listing" version="3.0"><pre>
          function predicate (key :Object, value :Object) :Boolean
      </pre></div>
-     </td>
-</tr>
-</table>
-<p></p>
-<span class="label">Returns</span>
-<table border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td width="20"></td><td><code>Boolean</code></td>
-</tr>
-</table>
-</div>
-<br>
-<br>
-<hr>
-<br>
-<p></p>
-<center class="copyright">Copyright&nbsp;&copy;&nbsp;2007-2010 Three Rings Design, Inc.</center>
-</div>
-</body>
-</html>
-<!--Copyright © 2007-2010 Three Rings Design, Inc.-->
+     </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code></td></tr></table></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody"><div class="listing" version="3.0"><pre>
+ // maps userId (int) to name (String)
+ var userNames :Map = Maps.newMapOf(int);
+ </pre></div>
+  </div><div class="detailBody"><div class="listing" version="3.0"><pre>
+ // maps a Hashable Page class to page objects, in a cache: pages will expire when they
+ // are no longer externally referenced.
+ var pages :Map = Maps.newBuilder(Page).makeWeakValues().build();
+ </pre></div>
+ </div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Fri Jul 1 2011, 12:56 PM -07:00  </center></div></body></html><!--<br/>Fri Jul 1 2011, 12:56 PM -07:00  -->
